@@ -1,0 +1,241 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1a1a1a, #333);
+    color: #ff1a1a;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+header img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ff1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff1a1a;
+    color: #fff;
+}
+
+/* Main content */
+main {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #ff1a1a;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 1.1em;
+}
+
+ul li strong {
+    color: #ff1a1a;
+}
+
+/* Products Section */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #ff1a1a;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #ff1a1a;
+}
+
+.product-card form input[type='submit'] {
+    background: #ff1a1a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-card form input[type='submit']:hover {
+    background: #cc0000;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #ff1a1a;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #ff1a1a;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Image Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 80%;
+}
+
+#caption {
+    text-align: center;
+    color: #ff1a1a;
+    padding: 10px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ff1a1a;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    cursor: pointer;
+}
+
+/* Team Backgrounds */
+.redbull {
+    background-image: url('images/redbull_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.ferrari {
+    background-image: url('images/ferrari_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.mercedes {
+    background-image: url('images/mercedes_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.mclaren {
+    background-image: url('images/mclaren_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.aston_martin {
+    background-image: url('images/aston_martin_background.jpg');
+    background-size: cover;
+    background-position: center;
+}

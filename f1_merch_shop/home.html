@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Merchandise Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>F1 Merchandise Shop
+            <img src="images/f1_logo.jpg" alt="F1 Logo" style="width: 50px;">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a href="cart.php">Cart</a></li>
+                <?php if (isset($_SESSION['username'])): ?>
+                    <li><a href="user.php">User Page</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                    <li>User: <?php echo htmlspecialchars($_SESSION['username']); ?></li>
+                <?php else: ?>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                <?php endif; ?>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to F1 Merch Shop!</h2>
+            <p>Your ultimate destination for official Formula 1 merchandise. Dive into the world of F1 with our exclusive range of high-quality products, representing all your favorite teams. Whether you are a die-hard fan or a casual supporter, we have something special just for you. Experience the thrill and prestige of F1 with our premium merchandise, crafted to bring the spirit of racing to your everyday life.</p>
+            <ul>
+                <li><strong>High-Quality Products:</strong> Made from top-notch materials to ensure durability and comfort.</li>
+                <li><strong>Official Team Merchandise:</strong> Show your support with officially licensed products from all F1 teams.</li>
+                <li><strong>Worldwide Shipping:</strong> Get your gear delivered anywhere across the globe.</li>
+                <li><strong>Secure Shopping:</strong> Enjoy a safe and secure shopping experience with us.</li>
+                <li><strong>Exclusive Offers:</strong> Don't miss out on special deals and limited edition items.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 F1 Merch Shop</p>
+        <p>Contact Us: <a href="tel:+1234567890">+1 (234) 567-890</a> | <a href="mailto:support@f1merchshop.com">support@f1merchshop.com</a></p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com/Formula1/" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/f1/" target="_blank">Instagram</a> |
+            <a href="https://www.formula1.com" target="_blank">Official Site</a>
+        </p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms & Conditions</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="faq.html">FAQ</a>
+        </p>
+    </footer>
+    <script src="validation.js"></script>
+</body>
+</html>
